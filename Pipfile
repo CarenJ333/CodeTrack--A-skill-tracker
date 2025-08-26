@@ -1,0 +1,31 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+exceptiongroup = "==1.3.0"
+greenlet = "==3.1.1"
+iniconfig = "==2.1.0"
+markdown-it-py = "==3.0.0"
+mdurl = "==0.1.2"
+packaging = "==25.0"
+pluggy = "==1.5.0"
+pygments = "==2.19.2"
+pytest = "==8.3.5"
+python-dateutil = "==2.9.0.post0"
+rich = "==14.1.0"
+shellingham = "==1.5.4"
+six = "==1.17.0"
+tomli = "==2.2.1"
+typer = "==0.16.1"
+typing-extensions = "==4.13.2"
+sqlalchemy = "*"
+click = "*"
+
+[dev-packages]
+pytest = "*"
+black = "*"
+
+[requires]
+python_version = "3.8"
