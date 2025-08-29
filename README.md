@@ -9,7 +9,6 @@ Built with **Python**, **SQLAlchemy (ORM)**, and **Pipenv** for dependency manag
 
 - Pipenv (for virtual environment & dependency management)
 
-- SQLite (database)
 
 - SQLAlchemy (ORM)
 

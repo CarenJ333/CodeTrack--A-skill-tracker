@@ -8,3 +8,4 @@ engine = create_engine(DATABASE_URL, echo=True)  # echo=True shows SQL logs
 SessionLocal = sessionmaker(bind=engine)
 
 Base = declarative_base()
+
