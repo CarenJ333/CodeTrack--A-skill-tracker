@@ -1,14 +1,15 @@
 1. CodeTrack- A skills tracker (CLI + ORM)
 
 A Command-Line Interface (CLI) application for logging, tracking, and analyzing coding practice sessions.  
-Built with **Python**, **SQLAlchemy (ORM)**, and **Pipenv** for dependency management.
+Built with **Python**, **SQLAlchemy (ORM)**, and **Pipenv** for dependency management. Watch the project recording at (https://www.loom.com/share/8bbff45106384172acda6e7ea5d60595?sid=389d7bb4-6e22-4600-b5c9-ed0b6e0390fa)
+
 
 2. Tech Stack
 
 - Python (v3.8.13 with pyenv)
 
 - Pipenv (for virtual environment & dependency management)
-
+- Sqlite
 
 - SQLAlchemy (ORM)
 
@@ -48,7 +49,7 @@ pipenv run python -m src.main
 Log a coding session:
 
 ```bash
-pipenv run python -m src.main log --duration 60 --notes "Worked on data structures"
+pipenv run python -m src.main log --duration 60 -- programming language "sql" --notes "count" --skillname "database"
 ```
 
 View sessions:
@@ -57,12 +58,36 @@ View sessions:
 pipenv run python -m src.main view
 ```
 
-### DEVELOPMENT NOTES
+View streak:
 
-How to run tests:
 ```bash
-pipenv run pytest
+pipenv run python -m src.main streak
 ```
+
+View progress report:
+
+```bash
+pipenv run python -m src.main progress
+```
+
+View summaries:
+
+Daily summary
+
+```bash
+pipenv run python -m src.main summary daily
+```
+
+Weekly summary
+```bash
+pipenv run python -m src.main summary weekly
+```
+
+Monthly summary
+```bash
+pipenv run python -m src.main summary monthly
+```
+
 
 ### Additional Dependencies
 - [tabulate](https://pypi.org/project/tabulate/) for pretty-printing tables
